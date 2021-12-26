@@ -1,13 +1,11 @@
-require('flow-remove-types/register')({ includes: /.*?\/mapbox-gl\/src\/.*/, excludes: { test: function() { return false; }} });
-
 var union = require('@turf/union');
 var bboxPolygon = require('@turf/bbox-polygon');
 var buffer = require('@turf/buffer');
 
-var LngLat = require('mapbox-gl/src/geo/lng_lat');
-var Evented = require('mapbox-gl/src/util/evented');
-var Transform = require('mapbox-gl/src/geo/transform');
-var util = require('mapbox-gl/src/util/util');
+var LngLat = require('mapbox-gl/dist/geo/lng_lat');
+var Evented = require('mapbox-gl/dist/util/evented');
+var Transform = require('mapbox-gl/dist/geo/transform');
+var util = require('mapbox-gl/dist/util/util');
 
 var Style = require('./style');
 
